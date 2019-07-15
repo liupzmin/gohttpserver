@@ -30,12 +30,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
           <ul class="nav navbar-nav">
-            <li class="hidden-xs">
-              <a href="javascript:void(0)" v-on:click='genQrcode()'>
-                View in Phone
-                <span class="glyphicon glyphicon-qrcode"></span>
-              </a>
-            </li>
+
             [[if eq .AuthType "openid"]]
             <template v-if="!user.email">
               <a href="/-/login" class="btn btn-sm btn-default navbar-btn">
